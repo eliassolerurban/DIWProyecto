@@ -7,33 +7,48 @@
     color: black;
 }
 
+
+html{
+    font-size: 6.25%; /*convierte 1px = 1rem*/
+}
+
+
 header h1{
     
-    font-size:1,375em;
+    font-size:38rem;
 }
 
 header nav a{
     
-    font-size:1,125em;
+    font-size:28rem;
     color:#556594;
 }
 
 main h2{
-    font-size:1,125em;
+    font-size:28rem;
 }
 
 main h3{
-    font-size:1em;
+    font-size:18rem;
 }
 
 main p{
-    font-size:0,813em;
+    font-size:14rem;
 }
 
+main form legend{
+    font-size:28rem;
+}
+
+main form label{
+    font-size:28rem;
+}
+
+
 footer h4{
-    font-size:0,813em;
+    font-size:14rem;
 }
 
 footer p{
-    font-size:0,6em;
+    font-size:10rem;
 }
