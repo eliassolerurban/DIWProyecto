@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@200;400&display=swap');
 
 *{
     margin:0px;
@@ -7,46 +7,43 @@
     color: black;
 }
 
-
 html{
     font-size: 6.25%; /*convierte 1px = 1rem*/
 }
-
 
 header h1{
     
     font-size:38rem;
 }
 
-header nav a{
+.navegacionPrincipal a{
     
     font-size:28rem;
     color:#556594;
 }
 
-main h2{
+main h2, main form legend{
     font-size:28rem;
 }
 
-main h3{
+main h3, main form label, main aside a{
     font-size:18rem;
 }
 
-main p{
+main p, h4, main pre, main aside blockquote{
     font-size:14rem;
 }
 
-main form legend{
-    font-size:28rem;
+main pre, main figcaption{
+    font-size: 13rem;
 }
 
-main form label{
-    font-size:28rem;
+main pre{
+    font-family:'Source Code Pro', monospace;
 }
 
-
-footer h4{
-    font-size:14rem;
+footer{
+    background-color: #e3e3e3;
 }
 
 footer p{
