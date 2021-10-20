@@ -38,7 +38,7 @@ main pre, main figcaption{
     font-size: 13rem;
 }
 
-main aside a{
+main aside a, main section h2{
     color: #ee6026;
 }
 
