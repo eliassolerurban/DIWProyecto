@@ -4,17 +4,36 @@
     margin:0px;
     padding:0px;
     font-family: 'Roboto', sans-serif;
-    font-size:0,813em;
+    color: black;
 }
 
-h1{
+header h1{
+    
     font-size:1,375em;
 }
 
-h2{
+header nav a{
+    
+    font-size:1,125em;
+    color:#556594;
+}
+
+main h2{
     font-size:1,125em;
 }
 
-h3{
+main h3{
     font-size:1em;
+}
+
+main p{
+    font-size:0,813em;
+}
+
+footer h4{
+    font-size:0,813em;
+}
+
+footer p{
+    font-size:0,6em;
 }
