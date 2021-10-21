@@ -38,8 +38,12 @@ main pre, main figcaption{
     font-size: 13rem;
 }
 
-main aside a, main section h2{
+.heroTexto h2, .heroTexto h3, .heroTexto p{
     color: #ee6026;
+}
+
+.heroTexto aside a{
+    color: white;
 }
 
 main pre{
