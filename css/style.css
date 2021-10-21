@@ -1,25 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@200;400&display=swap');
 
+:root{
+
+    --azul: #7a8194;
+    --naranja: #ee6026;
+    --grisClaro: #e3e3e3;
+    --blanco: white;
+    --negro: black;
+    --fuentePrincipal:'Roboto', sans-serif;
+    --fuenteCodigo:'Source Code Pro', monospace;
+
+}
+
 *{
     margin:0px;
     padding:0px;
-    font-family: 'Roboto', sans-serif;
-    color: black;
+    font-family:var(--fuentePrincipal);
+    color: var(--negro);
 }
 
 html{
     font-size: 6.25%; /*convierte 1px = 1rem*/
+    box-sizing: border-box; /*paddings locos no*/
+    /*width: 90%;
+    max-width: 1200rem;
+    margin: 0 auto;*/
+    
 }
 
 header h1{
     
     font-size:38rem;
+    text-decoration: underline;
+    text-decoration-color: var(--naranja);
+}
+
+.logo{
+    width: 120rem;
+    height: 120rem;
+
 }
 
 .navegacionPrincipal a{
-    
+    padding: 5rem;
     font-size:28rem;
-    color:#556594;
+    text-decoration: none;
+    float: right;
+}
+
+.navegacionEntradas a, section h2{
+    color:var(--azul);
+    text-decoration: none;
+
 }
 
 main h2, main form legend{
@@ -38,12 +70,27 @@ main pre, main figcaption{
     font-size: 13rem;
 }
 
-.heroTexto h2, .heroTexto h3, .heroTexto p{
-    color: #ee6026;
+a{
+    color: var(--naranja);
 }
 
-.heroTexto aside a{
-    color: white;
+.areaHero{
+    background-image: url("../img/php.jpg");
+    background-repeat: no-repeat;
+    background-size:cover; /**/
+    background-position:center center;
+    height: 538rem;
+    
+}
+
+.areaHero .heroTexto aside a{
+
+    color:var(--negro);
+    font-weight:bold;
+}
+
+.heroTexto h2, .heroTexto h3, .heroTexto p{
+    color: var(--blanco);
 }
 
 main pre{
@@ -51,7 +98,7 @@ main pre{
 }
 
 footer{
-    background-color: #e3e3e3;
+    background-color: var(--grisClaro);
 }
 
 footer p{
