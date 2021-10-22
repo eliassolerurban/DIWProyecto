@@ -2,7 +2,7 @@
 
 :root{
 
-    --azul: #0e5ccd;
+    --azul: #3459b4;
     --naranja: #ee6026;
     --grisClaro: #e3e3e3;
     --blanco: white;
@@ -22,31 +22,46 @@
 html{
     font-size: 6.25%; /*convierte 1px = 1rem*/
     box-sizing: border-box; /*paddings locos no*/
-    /*width: 90%;
-    max-width: 1200rem;
-    margin: 0 auto;*/
-    
 }
 
 header h1{
     
+    display: inline;
     font-size:38rem;
     text-decoration: underline;
     text-decoration-color: var(--naranja);
 }
 
 .logo{
-    width: 120rem;
-    height: 120rem;
+    display: inline;
+    width: 80rem;
+    height: 80rem;
 
+}
+
+.navegacionPrincipal{
+    float: right;
 }
 
 .navegacionPrincipal a{
-    padding: 5rem;
+    background-color: var(--blanco);
+    color:var(--naranja);
+    border-radius: 8rem;
     font-size:28rem;
     text-decoration: none;
-    float: right;
+    float: left;
+    padding: 8rem;
+    margin-top: 80rem;
+    margin-right:5rem;
+    
 }
+
+.navegacionPrincipal a:hover{
+    color:var(--blanco);
+    background-color: var(--naranja);
+
+}
+
 
 .navegacionEntradas a, section h2{
     color:var(--azul);
@@ -79,7 +94,7 @@ a{
     background-repeat: no-repeat;
     background-position:center center;
     background-size:cover;
-    height: 800rem;
+    height: 600rem;
     
 }
 
@@ -88,15 +103,20 @@ a{
     padding: 20rem;
 }
 
-.areaHero .heroTexto aside a{
+.heroTexto section{
+    margin: 50rem 40rem;    
+}
 
-    color:var(--negro);
+.heroTexto aside{
+    margin: 380rem 40rem 20rem 10rem;
+}
+
+.areaHero .heroTexto aside a{
     font-weight:bold;
 }
 
 .heroTexto h2, .heroTexto h3, .heroTexto p{
     color: var(--blanco);
-    margin: 50rem 0rem;
 }
 
 main pre{
