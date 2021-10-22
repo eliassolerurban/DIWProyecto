@@ -2,7 +2,7 @@
 
 :root{
 
-    --azul: #7a8194;
+    --azul: #0e5ccd;
     --naranja: #ee6026;
     --grisClaro: #e3e3e3;
     --blanco: white;
@@ -75,12 +75,17 @@ a{
 }
 
 .areaHero{
-    background-image: url("../img/php.jpg");
+    background-image: url("../img/web.png");
     background-repeat: no-repeat;
-    background-size:cover; /**/
     background-position:center center;
-    height: 538rem;
+    background-size:cover;
+    height: 800rem;
     
+}
+
+.areaHero .heroTexto{
+    margin: 20rem;
+    padding: 20rem;
 }
 
 .areaHero .heroTexto aside a{
@@ -91,6 +96,7 @@ a{
 
 .heroTexto h2, .heroTexto h3, .heroTexto p{
     color: var(--blanco);
+    margin: 50rem 0rem;
 }
 
 main pre{
