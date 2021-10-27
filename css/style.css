@@ -19,11 +19,6 @@
     color: var(--negro);
 }
 
-body p{
-    margin-top: 5rem;
-    margin-bottom: 20rem;
-}
-
 html{
     font-size: 6.25%; /*convierte 1px = 1rem*/
 }
@@ -54,6 +49,7 @@ header .logo{
 
 .navegacionPrincipal{
     float: right;
+    margin-top: 18rem;
 }
 
 .navegacionPrincipal a{
@@ -75,11 +71,33 @@ header .logo{
 
 }
 
+.navegacionPrincipal{
+    float: right;
+    margin-top: 18rem;
+}
 
-.navegacionEntradas a, section h2{
+.navegacionEntradas a{
+    display: block;
+    background-color: var(--blanco);
     color:var(--azul);
+    border-radius: 8rem;
+    font-size:28rem;
     text-decoration: none;
+    float: left;
+    padding: 8rem;
+    margin-top: 50rem;
+    margin-right:5rem;
+    
+}
 
+.navegacionEntradas a:hover{
+    color:var(--blanco);
+    background-color: var(--azul);
+
+}
+
+.navegacionEntradas blockquote{
+    clear: both;
 }
 
 main h2, main form legend{
@@ -96,6 +114,11 @@ main p, h4, main pre, main aside blockquote{
 
 main pre, main figcaption{
     font-size: 13rem;
+}
+
+body p{
+    margin-top: 15rem;
+    margin-bottom: 30rem;
 }
 
 a{
@@ -164,8 +187,6 @@ main table tr:first-child, main table tr:first-child th, main table caption{
     color: var(--negro);
     background-color: var(--grisClaro);
     border: 1px solid var(--negro);    
-
-    
 }
 
 main table tr:nth-child(even), main table tr:nth-child(even) td{
@@ -175,13 +196,26 @@ main table tr:nth-child(even), main table tr:nth-child(even) td{
 
 }
 
-main table tr:nth-child(even), main table tr:nth-child(odd) td{
+main table tr:nth-child(odd), main table tr:nth-child(odd) td{
     color: var(--blanco);
     background-color: var(--azul);
     border: 1px solid var(--naranja);    
 
 }
 
+main section h2{
+    clear: both;
+    color:var(--azul);
+    text-decoration: none;
+    margin: 50rem 15rem 15rem;
+}
+
+main article{
+    margin-left: 40rem;
+    margin-right: 40rem;
+    text-align: justify;
+
+}
 
 footer{
     background-color: var(--grisClaro);
