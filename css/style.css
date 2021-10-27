@@ -13,8 +13,8 @@
 }
 
 *{
-    margin:0px;
-    padding:0px;
+    margin:0rem;
+    padding:0rem;
     font-family:var(--fuentePrincipal);
     color: var(--negro);
 }
@@ -62,6 +62,8 @@ header .logo{
     padding: 8rem;
     margin-top: 50rem;
     margin-right:5rem;
+    transition: 0.8s;
+
     
 }
 
@@ -87,6 +89,8 @@ header .logo{
     padding: 8rem;
     margin-top: 50rem;
     margin-right:5rem;
+    transition: 0.8s;
+
     
 }
 
@@ -179,27 +183,23 @@ main table{
     text-align: center;
 }
 
-main table td{
-    border: 1px solid var(--naranja);    
-}
-
 main table tr:first-child, main table tr:first-child th, main table caption{
     color: var(--negro);
     background-color: var(--grisClaro);
-    border: 1px solid var(--negro);    
+    border: 1rem solid var(--negro);    
 }
 
 main table tr:nth-child(even), main table tr:nth-child(even) td{
     color: var(--blanco);
     background-color: var(--naranja);
-    border: 1px solid var(--azul);    
+    border: 1rem solid var(--azul);    
 
 }
 
 main table tr:nth-child(odd), main table tr:nth-child(odd) td{
     color: var(--blanco);
     background-color: var(--azul);
-    border: 1px solid var(--naranja);    
+    border: 1rem solid var(--naranja);    
 
 }
 
