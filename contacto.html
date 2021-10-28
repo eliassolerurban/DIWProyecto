@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>infoDAW</title>
-    <meta name="description" content="Página para contactar con infoDAW. En este apartado dispones de un formulario en el que podrás ingresar tus datos para contactar con nosotros. Ademaś, dejamos nuestro correo, teléfono y RRSS.">
+    <meta name="description"
+        content="Página para contactar con infoDAW. En este apartado dispones de un formulario en el que podrás ingresar tus datos para contactar con nosotros. Ademaś, dejamos nuestro correo, teléfono y RRSS.">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" media="screen" href="css/style.css">
     <link rel="stylesheet" media="print" href="css/specialStyle.css">
 
 </head>
+
 <body>
     <header>
-    <a href="index.html">
-        <img class="logo" src="img/logo.png" alt="logotipo de infoDAW">
-    </a>
-    <a href="contacto.html">
-        <h1>Contacto</h1>
-    </a>
+        <a href="index.html">
+            <img class="logo" src="img/logo.png" alt="logotipo de infoDAW">
+        </a>
+        <a href="contacto.html">
+            <h1>Contacto</h1>
+        </a>
         <nav class="navegacionPrincipal">
             <a href="index.html">Inicio</a>
             <a href="modulos.html">Módulos</a>
@@ -27,43 +30,36 @@
         </nav>
     </header>
     <main>
-        <form>
-            <fieldset>
-                <legend>Datos personales</legend>
-                <label>Nombre: </label>
-                <input class="nombre" type="text" pattern="[A-z0-9]{1-30}" required autofocus>
-                <br>
-                <label>Email: </label>
-                <input class="email" type="email" required>
-                <br>
-                <label>Edad: </label>
-                <input class="edad" type="number" min="18" max="99" required>
-                <br>
-                <label>Teléfono: </label>
-                <input class="telefono" type="tel" required>
-                <br>
-                <textarea class="consulta" placeholder="Escribe aquí tu consulta: "  ></textarea>
-                <br>
-                <input class="enviar" type="submit">
-            </fieldset>
-        </form>
-        <p>
-            Correo electrónico: <a href="mailto:infoDAW@gmail.com">infoDAW@gmail.com </a>
-            <a href="mailto:infoDAW@gmail.com"><button class="email"><img src="img/email.png" width="20" height="20" alt=""></button></a >
-        </p>
-        <p>
-            Teléfono: <a href="tel:666123321">666123321</a>
-            <a href="tel:666123321"><button class="telefono"><img src="img/telefono.png" width="20" height="20" alt=""></button></a>
-        </p>
+        <div class="bloqueForm">
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <input class="nombre" type="text" pattern="[A-z0-9]{1-30}" required autofocus placeholder="Nombre: ">
+                    <input class="email" type="email" required placeholder="Email: ">
+                    <input class="edad" type="number" min="18" max="99" required placeholder="Edad: ">
+                    <input class="telefono" type="tel" required placeholder="Teléfono: ">
+                    <textarea class="consulta" placeholder="Escribe aquí tu consulta: "></textarea>
+                    <button class="enviar">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
     </main>
     <footer>
         <h4>Política de privacidad y cookies</h4>
         <div class="footerContacto">
-            <a href="mailto:infoDAW@gmail.com"><button id="email"><img src="img/email.png" width="20" height="20" alt=""></button></a >
-            <a href="tel:666123321"><button id="telefono"><img src="img/telefono.png" width="20" height="20" alt=""></button></a>
-            <a href="twitter.com"><button id="twitter"><img src="img/twitter.png" width="20" height="20" alt=""></button></a>
+            <a href="mailto:infoDAW@gmail.com"><button id="email"><img src="img/email.png" width="20" height="20"
+                        alt=""></button></a>
+            <a href="tel:666123321"><button id="telefono"><img src="img/telefono.png" width="20" height="20"
+                        alt=""></button></a>
+            <a href="twitter.com"><button id="twitter"><img src="img/twitter.png" width="20" height="20"
+                        alt=""></button></a>
+            <a href="https://wa.me/whatsappphonenumbe"><button id="whatsapp"><img src="img/whatsapp.png" width="20" height="20" alt=""></button></a>
+
         </div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa harum dolorem eum blanditiis deserunt, iste corrupti ipsam, odit necessitatibus repellat rerum sint delectus suscipit recusandae beatae pariatur tempore nemo!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa harum dolorem eum blanditiis
+            deserunt, iste corrupti ipsam, odit necessitatibus repellat rerum sint delectus suscipit recusandae beatae
+            pariatur tempore nemo!</p>
     </footer>
 </body>
+
 </html>
