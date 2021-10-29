@@ -35,21 +35,22 @@ header h1{
     text-decoration: underline;
     -webkit-text-decoration-color: var(--naranja);
     text-decoration-color: var(--naranja);
-    margin-left: -90rem;
-
+    margin-left: -80rem;
 }
 
 header .logo{
-    width: 80rem;
-    height: 80rem;
-    margin-top: 50rem;
-    margin-bottom: 50rem;
+    width: 60rem;
+    height: 60rem;
+    margin-top: 48rem;
+    margin-bottom: 80rem;
     /*margin-left: 10rem;*/
 }
 
 .navegacionPrincipal{
     float: right;
     margin-top: 18rem;
+    box-shadow: 10px 10px 14px 2px
+
 }
 
 .navegacionPrincipal a{
@@ -62,8 +63,6 @@ header .logo{
     padding: 8rem;
     margin-top: 50rem;
     margin-right:5rem;
-
-    
 }
 
 .navegacionPrincipal a:hover{
