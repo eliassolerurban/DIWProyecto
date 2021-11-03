@@ -6,6 +6,7 @@
     --naranja: #ee6026;
     --grisClaro: #e3e3e3;
     --blanco: white;
+    --blancoMenu: rgba(255, 255, 255, 0.966);
     --negro: black;
     --fuentePrincipal:'Roboto', sans-serif;
     --fuenteCodigo:'Source Code Pro', monospace;
@@ -24,37 +25,39 @@ html{
 }
 
 header{
-    margin-left: 40rem;
-    margin-bottom: 25rem;
+    /*position: fixed;*/
+    width: 100%;
+    box-shadow: 0px 0px 0px 1px var(--grisClaro);
+    background-color: var(--blancoMenu);
+    padding-bottom: 30rem;
+
 }
 
 header h1{
-    
     display: inline;
     font-size:38rem;
     text-decoration: underline;
     -webkit-text-decoration-color: var(--naranja);
     text-decoration-color: var(--naranja);
-    margin-left: -80rem;
+    margin-left: 30rem;
+    margin-top: 48rem;
 }
 
 header .logo{
+    display: inline;
     width: 60rem;
     height: 60rem;
     margin-top: 48rem;
-    margin-bottom: 80rem;
-    /*margin-left: 10rem;*/
+    margin-left: 40rem;
 }
 
 .navegacionPrincipal{
     float: right;
     margin-top: 18rem;
-    box-shadow: 10px 10px 14px 2px
-
 }
 
 .navegacionPrincipal a{
-    background-color: var(--blanco);
+    background-color: var(--blancoMenu);
     color:var(--naranja);
     border-radius: 8rem;
     font-size:28rem;
@@ -66,11 +69,9 @@ header .logo{
 }
 
 .navegacionPrincipal a:hover{
-    color:var(--blanco);
+    color:var(--blancoMenu);
     background-color: var(--naranja);
     transition: 0.7s;
-
-
 }
 
 .navegacionPrincipal{
@@ -89,8 +90,7 @@ header .logo{
     padding: 8rem;
     margin-top: 50rem;
     margin-right:5rem;
-
-    
+   
 }
 
 .navegacionEntradas a:hover{
