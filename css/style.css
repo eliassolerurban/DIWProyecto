@@ -27,7 +27,7 @@ html{
 header{
     /*position: fixed;*/
     width: 100%;
-    box-shadow: 0px 0px 0px 1px var(--grisClaro);
+    box-shadow: 0rem 10rem 15rem 1rem var(--grisClaro);
     background-color: var(--blancoMenu);
     padding-bottom: 30rem;
 
@@ -110,6 +110,10 @@ main h2, main form legend{
 
 main h3, main form label, main aside a{
     font-size:18rem;
+}
+
+main .sombreado{
+    text-shadow: 4rem 4rem 2rem;
 }
 
 main p, h4, main pre, main aside blockquote{
@@ -222,6 +226,7 @@ main .bloqueForm{
     max-width: 820rem;
     margin: 0 auto;
     margin-top: 20rem;
+    margin-bottom: 20rem;
     border-radius: 10rem;
 
 }
@@ -266,6 +271,10 @@ main form textarea{
 main form .enviar{
     margin-top: 20rem;
     display: inline-block;
+}
+
+main div .gradiente{
+    background: linear-gradient(to right, var(--naranja) , var(--azul) , var(--blanco) , var(--blancoMenu) , var(--negro) );
 }
 
 footer{
