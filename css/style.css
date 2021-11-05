@@ -27,7 +27,7 @@ html{
 
 header{
     background-color: var(--blancoMenu);
-    box-shadow: 0rem 8rem 15rem 1rem var(--grisClaro);
+    box-shadow: 0rem 8rem 15rem 1rem var(--blancoMenu);
 
     display: flex;
     justify-content: space-between;
@@ -35,6 +35,14 @@ header{
 
     width: 100%;
     padding-bottom: 30rem;
+
+    z-index: 50;
+
+    position: fixed;
+}
+
+.bloqueVacio{
+    height: 150rem;
 }
 
 header .bloqueLogo{
@@ -155,10 +163,10 @@ a{
     background-size:cover;
 
     height: 700rem;
+    z-index: 10;
 }
 
 .areaHero .heroTexto{
-    margin: 20rem;
     padding: 20rem;
 }
 
