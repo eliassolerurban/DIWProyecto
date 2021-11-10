@@ -331,6 +331,9 @@ footer .whatsapp{
     right:0;
     bottom:0;
 
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+
     transition: 1s;
 }
 
