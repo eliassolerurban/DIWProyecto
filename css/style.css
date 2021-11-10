@@ -325,6 +325,15 @@ footer p{
     font-size:10rem;
 }
 
-footer #whatsapp{
-    float: right;
+footer .whatsapp{
+    position: fixed;
+    
+    right:0;
+    bottom:0;
+
+    transition: 1s;
+}
+
+footer .whatsapp:hover{
+    transform: rotate(360deg);
 }
