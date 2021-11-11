@@ -86,7 +86,6 @@ header .logo{
     border-radius: 8rem;
     padding: 14rem;
     
-    /* float: left; */
     margin-top: 50rem;
     margin-right:5rem;
 }
@@ -99,7 +98,6 @@ header .logo{
 }
 
 .navegacionPrincipal{
-    /* float: right; */
     margin-top: 18rem;
 }
 
@@ -161,7 +159,6 @@ a{
     background-size:cover;
 
     height: 700rem;
-    z-index: 10;
 }
 
 .areaHero .heroTexto{
@@ -226,6 +223,10 @@ main table tr:nth-child(odd), main table tr:nth-child(odd) td{
     background-color: var(--azul);
     border: 1rem solid var(--naranja);    
 
+}
+
+.mostrarPDF{
+    display: none;
 }
 
 main section h2{
@@ -317,6 +318,8 @@ main iframe{
 footer{
     background-color: var(--grisClaro);
     bottom: 0rem;
+    height: 90rem;
+    width: 100%;
 }
 
 footer p{
@@ -330,11 +333,79 @@ footer .whatsapp{
     bottom:0;
 
     margin-right: 10rem;
-    margin-bottom: 10rem;
-
     transition: 1s;
 }
 
 footer .whatsapp:hover{
     transform: rotate(360deg);
 }
+
+
+@media screen and (max-width: 1024px) {
+
+    footer{
+        padding-bottom: 30rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    footer{
+        padding-bottom: 30rem;
+    }
+
+    .header{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: var(--blanco);
+
+    }
+
+    .areaHero{
+        background: var(--azul);
+    }
+
+    .heroTexto{
+        margin-top: 120rem;
+        margin-left: -40rem;
+        text-align: center;
+    }
+
+    .heroTexto section article{
+        text-align: center;
+    }
+
+    table{
+        display: none;
+    }
+
+    .mostrarPDF{
+        text-align: center;
+        margin-top: 200rem;
+        display: block;
+    }
+
+    .navegacionEntradas{
+        margin-top: 120rem;
+        margin-left: 30rem;
+        align-content: center;
+
+    }
+
+    .navegacionEntradas a{
+        font-size: 14rem;
+    }
+
+    pre{
+        margin-left: -200rem;
+    }
+
+    .bloqueForm{
+        margin-top: 200rem;
+    }
+
+}
+
+
