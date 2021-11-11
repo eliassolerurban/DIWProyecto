@@ -24,8 +24,10 @@
 html{
     font-size: 6.25%; /*convierte 1px = 1rem*/
 }
-
 header{
+    height:150rem;
+}
+.header{
     background-color: var(--blancoMenu);
     box-shadow: 0rem 8rem 15rem 1rem var(--blancoMenu);
 
@@ -40,11 +42,7 @@ header{
 
     position: fixed;
 }
-
-.bloqueVacio{
-    height: 150rem;
-}
-
+    
 header .bloqueLogo{
     display: flex;
     align-items: center;
