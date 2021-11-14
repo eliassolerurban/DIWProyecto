@@ -183,6 +183,9 @@ a{
 
 main pre{
     font-family: var(--fuenteCodigo);
+    width: 700rem;
+    height: 600rem;
+    overflow: scroll;
 }
 
 main table{
@@ -341,6 +344,10 @@ footer .whatsapp:hover{
 }
 
 
+img:not([alt]){
+    border: 3px solid red;
+}
+
 @media screen and (max-width: 1024px ) {
 
     footer{
@@ -386,13 +393,9 @@ footer .whatsapp:hover{
         margin-top: 200rem;
         display: block;
     }
-    /*.mostrarPDF a{
-        /* background-image:url(../img/pdf.png);
-        background-repeat: no-repeat;
-        background-position:center center;
-        background-size:cover;
-        margin-right: 25rem; 
-    }*/
+    .mostrarPDF a::after{
+        content:url(https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png);
+    }
     .navegacionEntradas{
         margin-top: 120rem;
         justify-content: center;
@@ -405,9 +408,9 @@ footer .whatsapp:hover{
     }
 
     pre{
-        margin-left: -200rem;
-    }
-
+        display: none;
+    } 
+        
     .whatsapp{
         display: none;
     }
@@ -469,7 +472,7 @@ footer .whatsapp:hover{
         margin-right: 25rem; 
     }*/
     .navegacionEntradas{
-        margin-top: 120rem;
+        margin-top: 90rem;
         justify-content: center;
         align-content: center;
         align-items: center;
@@ -490,7 +493,6 @@ footer .whatsapp:hover{
         padding: 30rem;        
         max-width: 300rem;
     }
-    
 
 }
 
