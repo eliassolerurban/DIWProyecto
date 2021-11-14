@@ -458,7 +458,9 @@ img:not([alt]){
     }
 
     .heroTexto section aside{
+        margin: 0;
         margin-top: 150rem;
+        text-align: center;
     }
 
     .mostrarPDF{
