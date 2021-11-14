@@ -464,13 +464,7 @@ img:not([alt]){
     .mostrarPDF{
         margin-top: 120rem;
     }
-    /*.mostrarPDF a{
-        /* background-image:url(../img/pdf.png);
-        background-repeat: no-repeat;
-        background-position:center center;
-        background-size:cover;
-        margin-right: 25rem; 
-    }*/
+
     .navegacionEntradas{
         margin-top: 90rem;
         justify-content: center;
