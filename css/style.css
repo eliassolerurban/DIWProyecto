@@ -386,12 +386,18 @@ footer .whatsapp:hover{
         margin-top: 200rem;
         display: block;
     }
-
+    /*.mostrarPDF a{
+        /* background-image:url(../img/pdf.png);
+        background-repeat: no-repeat;
+        background-position:center center;
+        background-size:cover;
+        margin-right: 25rem; 
+    }*/
     .navegacionEntradas{
         margin-top: 120rem;
-        margin-left: 30rem;
+        justify-content: center;
         align-content: center;
-
+        align-items: center;
     }
 
     .navegacionEntradas a{
@@ -402,8 +408,12 @@ footer .whatsapp:hover{
         margin-left: -200rem;
     }
 
+    .whatsapp{
+        display: none;
+    }
+
     .bloqueForm{
-        margin-top: 200rem;
+        margin-top: 260rem;
     }
 
 }
