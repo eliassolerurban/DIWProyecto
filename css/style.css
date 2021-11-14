@@ -341,14 +341,14 @@ footer .whatsapp:hover{
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px ) {
 
     footer{
         padding-bottom: 30rem;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
 
     footer{
         padding-bottom: 30rem;
@@ -412,9 +412,85 @@ footer .whatsapp:hover{
         display: none;
     }
 
-    .bloqueForm{
-        margin-top: 260rem;
+
+    main .bloqueForm{        
+        max-width: 600rem;        
+        margin-top: 130rem;
+        margin-bottom: 20rem;
+        
     }
+    
+    main form{
+        padding: 40rem;        
+        max-width: 350rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 500px) {
+
+    footer{
+        padding-bottom: 40rem;
+    }
+
+    .header{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: var(--blanco);
+        max-height:220rem;
+    }
+
+    .navegacionPrincipal a {
+        
+        font-size:18rem;
+        padding: 10rem;
+    }
+
+    .heroTexto section article h2{
+        margin:70rem 0rem;
+        line-height: 40rem;
+    }
+
+    .heroTexto section aside{
+        margin-top: 150rem;
+    }
+
+    .mostrarPDF{
+        margin-top: 120rem;
+    }
+    /*.mostrarPDF a{
+        /* background-image:url(../img/pdf.png);
+        background-repeat: no-repeat;
+        background-position:center center;
+        background-size:cover;
+        margin-right: 25rem; 
+    }*/
+    .navegacionEntradas{
+        margin-top: 120rem;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .navegacionEntradas a{
+        font-size: 14rem;
+    }
+
+    main .bloqueForm{        
+        max-width: 420rem;        
+        margin-top: 130rem;
+        margin-bottom: 18rem;
+        
+    }
+    
+    main form{
+        padding: 30rem;        
+        max-width: 300rem;
+    }
+    
 
 }
 
