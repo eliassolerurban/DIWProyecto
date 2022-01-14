@@ -1,495 +1,432 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@200;400&display=swap');
-
-:root{
-
+:root {
     --azul: #3459b4;
     --naranja: #ee6026;
     --grisClaro: #e3e3e3;
     --blanco: white;
     --blancoMenu: rgba(255, 255, 255, 0.966);
     --negro: black;
-    --fuentePrincipal:'Roboto', sans-serif;
-    --fuenteCodigo:'Source Code Pro', monospace;
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteCodigo: 'Source Code Pro', monospace;
 }
 
-*{
-    font-family:var(--fuentePrincipal);
+* {
+    font-family: var(--fuentePrincipal);
     color: var(--negro);
     line-height: 21rem;
-
-    margin:0rem;
-    padding:0rem;
+    margin: 0rem;
+    padding: 0rem;
 }
 
-html{
-    font-size: 6.25%; /*convierte 1px = 1rem*/
+html {
+    font-size: 6.25%;
+    /*convierte 1px = 1rem*/
 }
-header{
-    height:150rem;
+
+header {
+    height: 150rem;
 }
-.header{
+
+.header {
     background-color: var(--blancoMenu);
     box-shadow: 0rem 8rem 15rem 1rem var(--blancoMenu);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
     padding-bottom: 30rem;
-
     z-index: 50;
-
     position: fixed;
 }
-    
-header .bloqueLogo{
+
+header .bloqueLogo {
     display: flex;
     align-items: center;
-
 }
 
-header h1{
+header h1 {
     text-decoration: underline;
     -webkit-text-decoration-color: var(--naranja);
     text-decoration-color: var(--naranja);
-    
-    font-size:38rem;
-    
+    font-size: 38rem;
     margin-left: 30rem;
     margin-top: 48rem;
 }
 
-header .logo{
+header .logo {
     width: 60rem;
     height: 60rem;
-
     margin-top: 48rem;
     margin-left: 40rem;
 }
 
-.navegacionPrincipal, .navegacionEntradas{
+.navegacionPrincipal,
+.navegacionEntradas {
     display: flex;
     align-items: center;
-        
     margin-top: 18rem;
 }
 
-.navegacionPrincipal a{
+.navegacionPrincipal a {
     background-color: var(--blancoMenu);
-    color:var(--naranja);
-    
-    font-size:28rem;
-
+    color: var(--naranja);
+    font-size: 28rem;
     text-decoration: none;
-    
     border-radius: 8rem;
     padding: 14rem;
-    
     margin-top: 50rem;
-    margin-right:5rem;
+    margin-right: 5rem;
 }
 
-.navegacionPrincipal a:hover{
-    color:var(--blancoMenu);
+.navegacionPrincipal a:hover {
+    color: var(--blancoMenu);
     background-color: var(--naranja);
-
     transition: 0.7s;
 }
 
-.navegacionPrincipal{
+.navegacionPrincipal {
     margin-top: 18rem;
 }
 
-.navegacionEntradas a{
+.navegacionEntradas a {
     background-color: var(--blanco);
-    color:var(--azul);
-
+    color: var(--azul);
     border-radius: 8rem;
     padding: 14rem;
-    
     text-decoration: none;
-    
-    font-size:28rem;
-    
+    font-size: 28rem;
     margin-top: 50rem;
-    margin-right:5rem;  
+    margin-right: 5rem;
 }
 
-.navegacionEntradas a:hover{
-    color:var(--blanco);
+.navegacionEntradas a:hover {
+    color: var(--blanco);
     background-color: var(--azul);
-    
     transition: 0.7s;
 }
 
-main h2, main form legend{
-    font-size:28rem;
+main h2,
+main form legend {
+    font-size: 28rem;
 }
 
-main h3, main form label, main aside a{
-    font-size:18rem;
+main h3,
+main form label,
+main aside a {
+    font-size: 18rem;
 }
 
-main .sombreado{
+main .sombreado {
     text-shadow: 4rem 4rem 2rem;
 }
 
-main p, h4, main pre, main aside blockquote{
-    font-size:14rem;
+main p,
+h4,
+main pre,
+main aside blockquote {
+    font-size: 14rem;
 }
 
-main pre, main figcaption{
+main pre,
+main figcaption {
     font-size: 13rem;
 }
 
-body p{
+body p {
     margin-top: 15rem;
     margin-bottom: 30rem;
 }
 
-a{
+a {
     color: var(--naranja);
 }
 
-.areaHero{
+.areaHero {
     background-image: url("../img/web.png");
     background-repeat: no-repeat;
-    background-position:center center;
-    background-size:cover;
-
+    background-position: center center;
+    background-size: cover;
     height: 700rem;
 }
 
-.areaHero .heroTexto{
+.areaHero .heroTexto {
     padding: 20rem;
 }
 
-.heroTexto section{
-    margin: 50rem 40rem;    
+.heroTexto section {
+    margin: 50rem 40rem;
 }
 
-.heroTexto aside{
+.heroTexto aside {
     margin: 280rem 40rem 20rem 10rem;
 }
 
-.areaHero .heroTexto aside a{
-    font-weight:bold;
+.areaHero .heroTexto aside a {
+    font-weight: bold;
 }
 
-.heroTexto h2, .heroTexto h3, .heroTexto p{
+.heroTexto h2,
+.heroTexto h3,
+.heroTexto p {
     color: var(--blanco);
 }
 
-main pre{
+main pre {
     font-family: var(--fuenteCodigo);
     width: 700rem;
     height: 600rem;
     overflow: scroll;
 }
 
-main table{
+main table {
     border: 1px solid var(--negro);
-    
     font-size: 24rem;
     text-align: center;
-
     caption-side: bottom;
-
     width: 100%;
-    height: 100%;   
-    
-
-    margin-top:20rem;
-    
+    height: 100%;
+    margin-top: 20rem;
     position: relative;
-    
     border-collapse: collapse;
-    
 }
 
-main table tr:first-child, main table tr:first-child th, main table caption{
+main table tr:first-child,
+main table tr:first-child th,
+main table caption {
     color: var(--negro);
     background-color: var(--grisClaro);
-    border: 1rem solid var(--negro);    
+    border: 1rem solid var(--negro);
 }
 
-main table tr:nth-child(even), main table tr:nth-child(even) td{
+main table tr:nth-child(even),
+main table tr:nth-child(even) td {
     color: var(--blanco);
     background-color: var(--naranja);
-    border: 1rem solid var(--azul);    
-
+    border: 1rem solid var(--azul);
 }
 
-main table tr:nth-child(odd), main table tr:nth-child(odd) td{
+main table tr:nth-child(odd),
+main table tr:nth-child(odd) td {
     color: var(--blanco);
     background-color: var(--azul);
-    border: 1rem solid var(--naranja);    
-
+    border: 1rem solid var(--naranja);
 }
 
-.mostrarPDF{
+.mostrarPDF {
     display: none;
 }
 
-main section h2{
-    color:var(--azul);
-    
+main section h2 {
+    color: var(--azul);
     text-decoration: none;
-    
     margin: 50rem 15rem 15rem;
 }
 
-main article{
+main article {
     margin-left: 40rem;
     margin-right: 40rem;
-    
     text-align: justify;
 }
 
-main .bloqueForm{
+main .bloqueForm {
     background-color: var(--grisClaro);
-    
     border-radius: 10rem;
-
     max-width: 820rem;
     margin: 0 auto;
-    
     margin-top: 20rem;
     margin-bottom: 20rem;
-    
 }
 
-main form{
+main form {
     padding: 30rem;
-
     margin: 0 auto;
-    
     max-width: 600rem;
-    
     text-align: center;
 }
 
-main form legend{
+main form legend {
     margin-bottom: 20rem;
 }
 
-main form input, main form textarea{
+main form input,
+main form textarea {
     margin: 0 auto;
     width: 100%;
-
     padding: 10px;
-    
-    box-sizing: border-box; 
+    box-sizing: border-box;
     resize: none;
 }
 
-main form .enviar{
+main form .enviar {
     display: block;
-	
     padding: 10px 45px 10px 45px;
     border: 0;
 }
 
-main form fieldset{
+main form fieldset {
     border: 0px;
 }
 
-main form input, main form textarea{
-    margin  : 10rem;    
+main form input,
+main form textarea {
+    margin: 10rem;
 }
 
-main form textarea{
+main form textarea {
     height: 250rem;
 }
 
-main form .enviar{
+main form .enviar {
     margin-top: 20rem;
     display: inline-block;
 }
 
-main .gradiente{
+main .gradiente {
     padding: 30rem;
-    background: linear-gradient(to right, var(--naranja) , var(--azul) , var(--blanco) , var(--blancoMenu) , var(--negro) );
+    background: linear-gradient(to right, var(--naranja), var(--azul), var(--blanco), var(--blancoMenu), var(--negro));
 }
 
-main iframe{
+main iframe {
     width: 100%;
     margin-bottom: 30rem;
 }
 
-footer{
+footer {
     background-color: var(--grisClaro);
     bottom: 0rem;
     height: 90rem;
     width: 100%;
 }
 
-footer p{
-    font-size:10rem;
+footer p {
+    font-size: 10rem;
 }
 
-footer .whatsapp{
+footer .whatsapp {
     position: fixed;
-    
-    right:0;
-    bottom:0;
-
+    right: 0;
+    bottom: 0;
     margin-right: 10rem;
     transition: 1s;
 }
 
-footer .whatsapp:hover{
+footer .whatsapp:hover {
     transform: rotate(360deg);
 }
 
-
-img:not([alt]){
+img:not([alt]) {
     border: 3px solid red;
 }
 
-@media screen and (max-width: 1024px ) {
-
-    footer{
+@media screen and (max-width: 1024px) {
+    footer {
         padding-bottom: 30rem;
     }
 }
 
 @media screen and (max-width: 900px) {
-
-    footer{
+    footer {
         padding-bottom: 30rem;
     }
-
-    .header{
+    .header {
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
         align-items: center;
         background-color: var(--blanco);
-
     }
-
-    .areaHero{
+    .areaHero {
         background: var(--azul);
     }
-
-    .heroTexto{
+    .heroTexto {
         margin-top: 120rem;
         margin-left: -40rem;
         text-align: center;
     }
-
-    .heroTexto section article{
+    .heroTexto section article {
         text-align: center;
     }
-
-    table{
+    table {
         display: none;
     }
-
-    .mostrarPDF{
+    .mostrarPDF {
         text-align: center;
         margin-top: 200rem;
         display: block;
     }
-    .mostrarPDF a::after{
-        content:url(https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png);
+    .mostrarPDF a::after {
+        content: url(https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png);
     }
-    .navegacionEntradas{
+    .navegacionEntradas {
         margin-top: 120rem;
         justify-content: center;
         align-content: center;
         align-items: center;
     }
-
-    .navegacionEntradas a{
+    .navegacionEntradas a {
         font-size: 14rem;
     }
-
-    pre{
-        display: none;
-    } 
-        
-    .whatsapp{
+    pre {
         display: none;
     }
-
-
-    main .bloqueForm{        
-        max-width: 600rem;        
+    .whatsapp {
+        display: none;
+    }
+    main .bloqueForm {
+        max-width: 600rem;
         margin-top: 130rem;
         margin-bottom: 20rem;
-        
     }
-    
-    main form{
-        padding: 40rem;        
+    main form {
+        padding: 40rem;
         max-width: 350rem;
     }
-    
-
 }
 
 @media screen and (max-width: 500px) {
-
-    footer{
+    footer {
         padding-bottom: 40rem;
     }
-
-    .header{
+    .header {
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
         align-items: center;
         background-color: var(--blanco);
-        max-height:220rem;
+        max-height: 220rem;
     }
-
     .navegacionPrincipal a {
-        
-        font-size:18rem;
+        font-size: 18rem;
         padding: 10rem;
     }
-
-    .heroTexto section article h2{
-        margin:70rem 0rem;
+    .heroTexto section article h2 {
+        margin: 70rem 0rem;
         line-height: 40rem;
     }
-
-    .heroTexto section aside{
+    .heroTexto section aside {
         margin: 0;
         margin-top: 150rem;
         text-align: center;
     }
-
-    .mostrarPDF{
+    .mostrarPDF {
         margin-top: 120rem;
     }
-
-    .navegacionEntradas{
+    .navegacionEntradas {
         margin-top: 90rem;
         justify-content: center;
         align-content: center;
         align-items: center;
     }
-
-    .navegacionEntradas a{
+    .navegacionEntradas a {
         font-size: 14rem;
     }
-
-    main .bloqueForm{        
-        max-width: 420rem;        
+    main .bloqueForm {
+        max-width: 420rem;
         margin-top: 130rem;
         margin-bottom: 18rem;
-        
     }
-    
-    main form{
-        padding: 30rem;        
+    main form {
+        padding: 30rem;
         max-width: 300rem;
     }
-
 }
-
-
