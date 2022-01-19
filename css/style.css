@@ -49,8 +49,8 @@ header h1 {
     -webkit-text-decoration-color: var(--naranja);
     text-decoration-color: var(--naranja);
     font-size: 38rem;
-    margin-left: 30rem;
     margin-top: 48rem;
+    margin-left: 30rem;
 }
 
 header .logo {
@@ -67,7 +67,8 @@ header .logo {
     margin-top: 18rem;
 }
 
-.navegacionPrincipal a {
+.navegacionPrincipal a,
+button {
     background-color: var(--blancoMenu);
     color: var(--naranja);
     font-size: 28rem;
@@ -78,10 +79,15 @@ header .logo {
     margin-right: 5rem;
 }
 
-.navegacionPrincipal a:hover {
+.navegacionPrincipal a:hover,
+button:hover {
     color: var(--blancoMenu);
     background-color: var(--naranja);
     transition: 0.7s;
+}
+
+button {
+    margin: 0 auto;
 }
 
 .navegacionPrincipal {
