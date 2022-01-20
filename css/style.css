@@ -324,16 +324,35 @@ img:not([alt]) {
     border: 3px solid red;
 }
 
+.animacion {
+    animation-duration: 1.5s;
+    animation-name: animTexto;
+    margin: 20px;
+}
+
+@keyframes animTexto {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+}
 @media screen and (max-width: 1024px) {
     footer {
         padding-bottom: 30rem;
     }
 }
-
 @media screen and (max-width: 900px) {
     footer {
         padding-bottom: 30rem;
     }
+    
     .header {
         flex-wrap: wrap;
         justify-content: center;
@@ -341,58 +360,70 @@ img:not([alt]) {
         align-items: center;
         background-color: var(--blanco);
     }
+    
     .areaHero {
         background: var(--azul);
     }
+    
     .heroTexto {
         margin-top: 120rem;
         margin-left: -40rem;
         text-align: center;
     }
+    
     .heroTexto section article {
         text-align: center;
     }
+    
     table {
         display: none;
     }
+    
     .mostrarPDF {
         text-align: center;
         margin-top: 200rem;
         display: block;
     }
+    
     .mostrarPDF a::after {
         content: url(https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png);
     }
+    
     .navegacionEntradas {
         margin-top: 120rem;
         justify-content: center;
         align-content: center;
         align-items: center;
     }
+    
     .navegacionEntradas a {
         font-size: 14rem;
     }
+    
     pre {
         display: none;
     }
+    
     .whatsapp {
         display: none;
     }
+    
     main .bloqueForm {
         max-width: 600rem;
         margin-top: 130rem;
         margin-bottom: 20rem;
     }
+    
     main form {
         padding: 40rem;
         max-width: 350rem;
     }
 }
-
 @media screen and (max-width: 500px) {
     footer {
         padding-bottom: 40rem;
     }
+    
     .header {
         flex-wrap: wrap;
         justify-content: center;
@@ -401,36 +432,44 @@ img:not([alt]) {
         background-color: var(--blanco);
         max-height: 220rem;
     }
+    
     .navegacionPrincipal a {
         font-size: 18rem;
         padding: 10rem;
     }
+    
     .heroTexto section article h2 {
         margin: 70rem 0rem;
         line-height: 40rem;
     }
+    
     .heroTexto section aside {
         margin: 0;
         margin-top: 150rem;
         text-align: center;
     }
+    
     .mostrarPDF {
         margin-top: 120rem;
     }
+    
     .navegacionEntradas {
         margin-top: 90rem;
         justify-content: center;
         align-content: center;
         align-items: center;
     }
+    
     .navegacionEntradas a {
         font-size: 14rem;
     }
+    
     main .bloqueForm {
         max-width: 420rem;
         margin-top: 130rem;
         margin-bottom: 18rem;
     }
+    
     main form {
         padding: 30rem;
         max-width: 300rem;
