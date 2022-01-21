@@ -15,4 +15,4 @@ iniciar = () => {
     boton4.addEventListener("click", audio4.play());
 }
 
-window.addEventListener("load", iniciar, false);
+// window.addEventListener("load", iniciar, false);
