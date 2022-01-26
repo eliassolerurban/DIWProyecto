@@ -9,10 +9,18 @@ iniciar = () => {
     boton3 = document.getElementById("boton3");
     boton4 = document.getElementById("boton4");
 
-    boton1.addEventListener("click", audio1.play());
-    boton2.addEventListener("click", audio2.play());
-    boton3.addEventListener("click", audio3.play());
-    boton4.addEventListener("click", audio4.play());
+    boton1.addEventListener("click", function() {
+        audio1.play();
+    });
+    boton2.addEventListener("click", function() {
+        audio2.play();
+    });
+    boton3.addEventListener("click", function() {
+        audio3.play();
+    });
+    boton4.addEventListener("click", function() {
+        audio4.play();
+    });
 }
 
-// window.addEventListener("load", iniciar, false);
+window.addEventListener("load", iniciar, false);
