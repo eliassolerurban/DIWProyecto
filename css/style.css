@@ -61,7 +61,8 @@ header .logo {
 }
 
 .navegacionPrincipal,
-.navegacionEntradas {
+.navegacionEntradas,
+.botonesAudio {
     display: flex;
     align-items: center;
     margin-top: 18rem;
@@ -324,10 +325,38 @@ img:not([alt]) {
     border: 3px solid red;
 }
 
-.animacion {
+.animacionTexto {
     animation-duration: 1.5s;
     animation-name: animTexto;
     margin: 20px;
+}
+
+.animacionColor {
+    width: 100%;
+    height: 100px;
+    background-color: var(--naranja);
+    animation-name: animColor;
+    animation-duration: 3s;
+}
+
+video {
+    width: 100%;
+}
+
+.controlVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animColor {
+    from {
+        background-color: var(--azul);
+    }
+    to {
+        background-color: var(--naranja);
+    }
 }
 
 @keyframes animTexto {
