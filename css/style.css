@@ -5,7 +5,6 @@
     --grisClaro: #e3e3e3;
     --blanco: white;
     --blancoMenu: rgba(255, 255, 255, 0.966);
-    --colorHeroTexto: #ff7c72;
     --negro: black;
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteCodigo: 'Source Code Pro', monospace;
@@ -351,6 +350,10 @@ video {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+aside p a {
+    color: var(--negro);
 }
 
 @keyframes animColor {
