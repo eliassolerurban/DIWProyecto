@@ -177,6 +177,7 @@ a {
 .heroTexto p {
     color: var(--blanco);
     font-weight: bold;
+    text-decoration: underline;
 }
 
 main pre {
