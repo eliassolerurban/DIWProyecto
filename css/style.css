@@ -5,6 +5,7 @@
     --grisClaro: #e3e3e3;
     --blanco: white;
     --blancoMenu: rgba(255, 255, 255, 0.966);
+    --colorHeroTexto: #ff7c72;
     --negro: black;
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteCodigo: 'Source Code Pro', monospace;
@@ -175,7 +176,7 @@ a {
 .heroTexto h2,
 .heroTexto h3,
 .heroTexto p {
-    color: var(--blanco);
+    color: var(--negro);
     font-weight: bold;
     text-decoration: underline;
 }
