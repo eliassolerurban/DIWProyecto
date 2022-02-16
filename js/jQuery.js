@@ -15,4 +15,12 @@ $(document).ready(function() {
         let position = $("#entrada3").offset();
         $('html, body').animate({ scrollTop: position.top - 190 }, 'slow');
     });
+    $("#toTop").css("display", "none");
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 500) {
+            $("#toTop").fadeIn("slow");
+        } else {
+            $("#toTop").fadeOut("slow");
+        }
+    });
 });

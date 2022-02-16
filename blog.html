@@ -11,6 +11,7 @@
     <link rel="stylesheet" media="screen" href="css/style.css">
     <link rel="stylesheet" media="print" href="css/specialStyle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -112,41 +113,41 @@
                 <h4>Instalación de Apache en Docker</h4>
                 <iframe width="798" height="449" src="https://www.youtube.com/embed/a0st4CTq32I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <pre>
-                        &lt;?php declare(strict_types=1);
+                    &lt;?php declare(strict_types=1);
 
+                    
+                    $frase = $_GET["frase"];
+                    
+                    echo palindromo($frase);
 
-                                $frase = $_GET["frase"];
-
-                                echo palindromo($frase);
-
-                                function palindromo(string $frase): bool {
-                                    $fraseSinEspacios = "";
-
-                                    for($i=0, $aux=0; $i&gt; strlen($frase); $i++){
+                    function palindromo(string $frase): bool {
+                        $fraseSinEspacios = "";
+                        
+                        for($i=0, $aux=0; $i&gt; strlen($frase); $i++){
                                         if($frase[$i]!=" "){
                                             $aux++; 
                                         }   
-
+                                        
                                         else{
                                             $fraseSinEspacios[$aux] = $frase[$i];
                                         }
-
+                                        
                                     }
-
+                                    
                                     $fraseInversa="";
-
+                                    
                                     for ($i=0; $i &lt; strlen($fraseSinEspacios); $i++) { 
                                         $fraseInversa[$i] = $fraseSinEspacios[strlen($fraseSinEspacios)-1-$i];
                                     }
 
-
+                                    
                                     return strtolower($fraseInversa) == strtolower($fraseSinEspacios);
-                                
+                                    
                                 }
 
-
-                        ?&gt;
-                </pre>
+                                
+                                ?&gt;
+                            </pre>
 
                 <p>
                     Adipisci ab laudantium architecto. Sunt quibusdam voluptates exercitationem cum omnis quis odit, dolor recusandae expedita ratione doloremque quaerat similique sapiente ipsa veritatis? Iusto praesentium corrupti quia possimus ad a dicta. Deleniti voluptas
@@ -243,14 +244,15 @@
             <p class="animacionTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quod maiores, atque necessitatibus aut expedita dolorum? Perspiciatis cum molestias nam itaque voluptates! Quaerat exercitationem error quidem magnam possimus eveniet.</p>
             <div class="animacionColor"></div>
         </section>
+        <a id="toTop" href="#"><i class="fas fa-arrow-up"></i></a>
     </main>
     <footer>
         <h4>Política de privacidad y cookies</h4>
         <div class="footerContacto">
             <a href="mailto:infoDAW@gmail.com"><button id="email"><img src="img/email.png" width="20" height="20"
-                        alt="botón de mail"></button></a>
+                alt="botón de mail"></button></a>
             <a href="tel:666123321"><button id="telefono"><img src="img/telefono.png" width="20" height="20"
-                        alt="botón de teléfono"></button></a>
+                    alt="botón de teléfono"></button></a>
             <a href="twitter.com"><button id="twitter"><img src="img/twitter.png" width="20" height="20"
                         alt="botón de twitter"></button></a> </div> <a href="https://wa.me/whatsappphonenumbe" target="_blank"><button class="whatsapp"><img src="img/whatsapp.png" width="50" height="50" alt="botón de whatsapp"></button></a>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa harum dolorem eum blanditiis deserunt, iste corrupti ipsam, odit necessitatibus repellat rerum sint delectus suscipit recusandae beatae pariatur tempore nemo!</p>
