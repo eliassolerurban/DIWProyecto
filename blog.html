@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" media="screen" href="css/style.css">
     <link rel="stylesheet" media="print" href="css/specialStyle.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -37,14 +37,15 @@
     </header>
     <main>
         <aside class="navegacionEntradas">
-            <a href="#entrada1">Entrada 1</a>
-            <a href="#entrada2">Entrada 2</a>
-            <a href="#entrada3">Entrada 3</a>
-            <a href="#entrada4">Entrada 4</a>
+            <div>
+                <a href="#entrada1" id="btn1">Entrada 1</a>
+                <a href="#entrada2" id="btn2">Entrada 2</a>
+                <a href="#entrada3" id="btn3">Entrada 3</a>
+                <a href="#entrada4" id="btn4">Entrada 4</a>
+            </div>
         </aside>
-        <a name="entrada1"></a>
         <section>
-            <h2>Entrada 1</h2>
+            <h2 name="entrada1" id="entrada1">Entrada 1</h2>
             <article>
                 <h3>Lorem</h3>
                 <p>
@@ -68,9 +69,8 @@
 
         </section>
 
-        <a name="entrada2"></a>
         <section>
-            <h2>Entrada 2</h2>
+            <h2 id="entrada2" name="entrada2">Entrada 2</h2>
             <article>
                 <h3 class="sombreado">Lorem</h3>
                 <p>
@@ -98,10 +98,9 @@
                 </div>
             </article>
         </section>
-        <a name="entrada3"></a>
 
         <section>
-            <h2>Entrada 3</h2>
+            <h2 name="entrada3" id="entrada3">Entrada 3</h2>
             <article>
                 <h3>Lorem</h3>
                 <p>
@@ -160,9 +159,8 @@
             </article>
         </section>
 
-        <a name="entrada4"></a>
         <section>
-            <h2>Entrada 4</h2>
+            <h2 name="entrada4" id="entrada4">Entrada 4</h2>
             <article>
                 <h3>Lorem</h3>
                 <p>
@@ -260,6 +258,7 @@
     </footer>
     <script src="js/video.js"></script>
     <script src="js/audio.js"></script>
+    <script src="js/jQuery.js"></script>
 </body>
 
 </html>
