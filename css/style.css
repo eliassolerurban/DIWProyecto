@@ -60,6 +60,16 @@ header .logo {
     margin-left: 40rem;
 }
 
+#trigger {
+    background: var(--naranja);
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    display: none;
+}
+
 .navegacionPrincipal,
 .navegacionEntradas,
 .botonesAudio {
@@ -442,6 +452,14 @@ aside p a {
 }
 
 @media screen and (max-width: 500px) {
+    #trigger {
+        font-size: 22rem;
+        display: block;
+        width: 100%;
+    }
+    .navegacionPrincipal {
+        display: none;
+    }
     footer {
         padding-bottom: 40rem;
     }
@@ -456,6 +474,7 @@ aside p a {
     .navegacionPrincipal a {
         font-size: 18rem;
         padding: 10rem;
+        width: 100%;
     }
     .heroTexto section article h2 {
         margin: 70rem 0rem;
